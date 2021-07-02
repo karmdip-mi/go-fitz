@@ -1,0 +1,10 @@
+language: go
+
+go:
+  - 1.12.x
+
+install:
+ - go get -tags nopie -t -v ./...
+
+script:
+ - go build -tags nopie
